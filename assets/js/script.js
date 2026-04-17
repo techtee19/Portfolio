@@ -1,5 +1,13 @@
 'use strict';
 
+// open all anchor links in a new tab
+const allLinks = document.querySelectorAll("a[href]");
+
+for (let i = 0; i < allLinks.length; i++) {
+  allLinks[i].setAttribute("target", "_blank");
+  allLinks[i].setAttribute("rel", "noopener noreferrer");
+}
+
 
 
 // element toggle function
